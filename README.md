@@ -1,7 +1,7 @@
 Using React/Redux:
 
-1. Get cat images from "http://mapd-cats.azurewebsites.net/catpics”
-2. Get cat facts from "http://mapd-cats.azurewebsites.net/catfacts”
+1. Get cat images from "http://mapd-cats.azurewebsites.net/catpics"
+2. Get cat facts from "http://mapd-cats.azurewebsites.net/catfacts"
 3. Append the results to DOM.
   - One image will have one fact associated with it.
 4. Be able to remove/delete images (with attached fact) from DOM.
