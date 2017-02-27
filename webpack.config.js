@@ -1,7 +1,6 @@
 const webpack = require('webpack');
 
 module.exports = {
-  debug: true,
   entry: [
     'webpack-hot-middleware/client',
     __dirname + '/src/index.js',
@@ -21,22 +20,19 @@ module.exports = {
         test: /\.scss$/,
         loaders: ['style-loader', 'css-loader', 'sass-loader'],
       },
-      // {
-      //   test: /\.json$/,
-      //   loader: 'json',
-      // },
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: 'babel',
+        loader: 'babel-loader',
       },
     ],
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new ExtractTextPlugin('public/style.css', {
+    new ExtractTextPlugin({
+      filename: 'public/css/style.css',
       allChunks: true,
     }),
-    new webpack.NoErrorsPlugin(),
+    new webpack.NoEmitOnErrorsPlugin(),
   ],
 }
