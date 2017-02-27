@@ -29,10 +29,6 @@ module.exports = {
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new ExtractTextPlugin({
-      filename: 'public/css/style.css',
-      allChunks: true,
-    }),
     new webpack.NoEmitOnErrorsPlugin(),
   ],
 }
