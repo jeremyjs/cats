@@ -1,5 +1,8 @@
 import React from 'react';
+import { CatFactGridItem } from './CatFactGridItem';
 
-export const CatFactGrid = () => (
-  <div className="CatFactGrid"></div>
+export const CatFactGrid = ({ cats }) => (
+  <div className="CatFactGrid">
+    {cats.map(CatFactGridItem)}
+  </div>
 );
