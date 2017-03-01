@@ -1,0 +1,28 @@
+.MatterCard {
+  box-shadow: 0px 0px 8px hsla(0, 0%, 45%, 0.85);
+
+  .image-container {
+    position: relative;
+
+    .image {
+      position: relative;
+    }
+
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      background-color: hsla(0, 0%, 0%, 0.5);
+      color: hsla(0, 0%, 100%, 1.0);
+      padding: 10px;
+    }
+  }
+
+  .actions {
+    display: block;
+    padding: 10px;
+
+    button {
+      display: block;
+    }
+  }
+}
