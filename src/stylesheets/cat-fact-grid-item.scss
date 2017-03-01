@@ -1,21 +1,4 @@
 .CatFactGridItem {
-  background-color: #eee;
-  width: 200px;
-  padding: 10px;
-
-  .image-outer {
-    display: flex;
-    justify-content: space-around;
-
-    .image {
-      max-width: 200px;
-      max-height: 200px;
-    }
-
-  }
-
-  .text {
-    margin-top: 10px;
-    width: 200px;
-  }
+  opacity: 1;
+  transition: opacity 250ms linear;
 }

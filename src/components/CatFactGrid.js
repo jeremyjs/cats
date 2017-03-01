@@ -4,6 +4,8 @@ import '../stylesheets/cat-fact-grid.scss';
 
 export const CatFactGrid = ({ cats }) => (
   <div className="CatFactGrid">
-    {cats.map(CatFactGridItem)}
+    {cats.map((cat) => (
+      <CatFactGridItem key={cat.imgUrl} {...cat} />
+    ))}
   </div>
 );
